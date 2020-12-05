@@ -14,16 +14,16 @@ router.get("/stop", (req, res) => {
 });
 
 router.get("/events", (req, res) => {
-  const eventsToSend = Object.fromEntries(events);
+  const eventsResponse = Object.fromEntries(events);
   res.send({
-    data: eventsToSend,
+    data: eventsResponse,
   });
 });
 
 router.get("/words", (req, res) => {
-  const wordsToSend = Object.fromEntries(words);
+  const wordsResponse = Object.fromEntries(words);
   res.send({
-    data: wordsToSend,
+    data: wordsResponse,
   });
 });
 
