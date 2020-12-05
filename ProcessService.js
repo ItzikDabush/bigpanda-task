@@ -1,6 +1,6 @@
 const { spawn } = require("child_process");
 const { dataProcess } = require("./CounterService");
-const childProcess = spawn("./new");
+const childProcess = spawn("./blackbox");
 
 const initProcess = () => {
   childProcess.stdout.on("data", (data) => {
